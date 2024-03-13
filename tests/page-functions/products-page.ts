@@ -1,4 +1,4 @@
-import { BrowserContext, expect, Page } from "@playwright/test";
+import { BrowserContext, Page } from "@playwright/test";
 import { productsPageObject } from "../pageObjects/products.page";
 import { pageUtils } from "../utils/page-utils";
 

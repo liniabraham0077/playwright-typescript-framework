@@ -1,6 +1,7 @@
 #### Installation
 
 Clone the repository
+
 ```bash
 git clone https://github.com/liniabraham0077/playwright-typescript-framework.git
 ```
@@ -14,39 +15,18 @@ npx playwright install
 
 #### Run application
 
-Run tests in Parallel chrome
+Run tests 
 
 ```bash
-npm run test:chrome - For tests only on chrome browser
+npm run test
 ```
 
-Run tests in Parallel firefox
+<!-- build docker iamge from dockerfile -->
 
-```bash
-npm run test:firefox - For tests only on firefox browser
-```
+docker build -t <name of the image> .
 
-Run tests in Parallel safari
+docker-compose up --build
 
-```bash
-npm run test:safari - For tests only on safari browser
-```
+<!-- build docker iamge from dockerfile and run tests using docker-compose file -->
 
-Run tests in Parallel edge
-
-```bash
-npm run test:edge - For tests only on edge browser
-```
-
-Run tests in Parallel on all browsers (chrome, safari, edge and firefox)
-
-```bash
-npm run test  - For tests only on all browsers
-```
-
-#### Playwright Test Report 
-
-```bash
-Html-test-report :
-npm run test:chrome (OR)  npm run test:edge (OR) npm run html-report
-```
+docker-compose up --build
