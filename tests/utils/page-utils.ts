@@ -7,7 +7,6 @@ dotenv.config();
 
 export const pageUtils = () => {
 	const navigateTo = async (page: Page, hostname: string, path: string) => {
-		console.log(`hostname is ${process.env[hostname]}`);
 		const url = process.env[hostname] + path;
 		await page.goto(url);
 		await page.waitForLoadState('domcontentloaded');
