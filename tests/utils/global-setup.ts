@@ -1,5 +1,5 @@
-async function globalSetup(){
-  console.log("test setup function...");
-};
+function setup() {
+	console.log('starting test database...');
+}
 
-export default globalSetup;
+export default setup;
