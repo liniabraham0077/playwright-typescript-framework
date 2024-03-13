@@ -1,11 +1,9 @@
 import testData from '../data/data.json';
 
 export const commonUtils = () => {
-  const getTestData = async () => {
-   return testData;
-  };
+	const getTestData = () => testData;
 
-  return {
-    getTestData: async () => getTestData(),
-  };
+	return {
+		getTestData: () => getTestData(),
+	};
 };
